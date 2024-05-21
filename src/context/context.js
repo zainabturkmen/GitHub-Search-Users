@@ -8,3 +8,9 @@ const rootUrl = 'https://api.github.com';
 
 
 const GithubContext = React.createContext();
+(
+// Provider , Consumer 
+
+const GithubProvider = ({children}) => {
+    <GithubContext.Provider value="hello">{children}</GithubContext.Provider>
+}

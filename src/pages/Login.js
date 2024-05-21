@@ -6,7 +6,9 @@ import loginImg from "../images/login-img.svg";
 const Login = () => {
   return (
     <Wrapper>
-      <div className="container"></div>
+      <div className="container">
+        <img src={} />
+      </div>
     </Wrapper>
   );
 };

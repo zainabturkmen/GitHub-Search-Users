@@ -9,10 +9,10 @@ function App() {
         <Dashboard></Dashboard>
       </Route>
       <Route path="/login">
-        <Login />
+        <Login></Login>
       </Route>
       <Route path="*">
-        <Error />
+        <Error></Error>
       </Route>
     </Router>
   );

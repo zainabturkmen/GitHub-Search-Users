@@ -31,11 +31,11 @@ const UserInfo = () => {
       color: "purple"
     },
     {
-      id: 1,
+      id: 4,
       icon: <GoRepo className="icon" />,
-      label: "repos",
-      value: public_repos,
-      color: "pink"
+      label: "gists",
+      value: public_gists,
+      color: "yellow"
     },
   ];
   return <h2>user info component:</h2>;

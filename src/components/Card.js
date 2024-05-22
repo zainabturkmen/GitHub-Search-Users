@@ -28,6 +28,7 @@ const Card = () => {
       <div className="links">
         <p><MdBusiness></MdBusiness> {company}</p>
         <p><MdLocationOn></MdLocationOn> {locationocation}</p>
+        <a href={"https://${blog}"}><MdLink></MdLink>{blog}</a>
       </div>
     </Wrapper>
   );

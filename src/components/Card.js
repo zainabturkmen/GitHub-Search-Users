@@ -24,7 +24,11 @@ const Card = () => {
         </div>
         <a href={html_url}>follow</a>
       </header>
-      <p className="bio"></p>
+      <p className="bio">{bio}</p>
+      <div className="links">
+        <p><MdBusiness></MdBusiness> {company}</p>
+        <p><MdLocationOn></MdLocationOn> {locationocation}</p>
+      </div>
     </Wrapper>
   );
 };

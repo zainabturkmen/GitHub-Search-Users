@@ -9,8 +9,12 @@ const UserInfo = () => {
   const { public_repos, followers, following, public_gists } = githubUser;
 
   const items = [
-    {id:1, icon:<GoRepo className="icon"/>, label:}
-
+    {
+      id: 1,
+      icon: <GoRepo className="icon" />,
+      label: "repos",
+      value: public_repos,
+    },
   ];
   return <h2>user info component:</h2>;
 };

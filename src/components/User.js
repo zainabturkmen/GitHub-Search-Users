@@ -6,7 +6,8 @@ const User = () => {
   return(
     <section className='section'>
       <Wrapper classNamw="section-center">
-
+        <Card />
+        <Followers />
       </Wrapper>
     </section>
   )

@@ -18,6 +18,10 @@ const Card = () => {
     <Wrapper>
       <header>
         <img src={avatar_url} alt={name} />
+        <div>
+          <h4>{name}</h4>
+          <p>@{twitter_username} || </p>
+        </div>
       </header>
     </Wrapper>
   );

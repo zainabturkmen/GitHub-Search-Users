@@ -51,7 +51,11 @@ const UserInfo = () => {
 };
 
 const Item = ({icon, label, value, color}) => {
-  
+  return (
+      <article className="item">
+        <span className={color}>{icon}</span>
+      </article>
+  )
 }
 
 const Wrapper = styled.section`

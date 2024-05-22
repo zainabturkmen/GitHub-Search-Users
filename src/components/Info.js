@@ -8,7 +8,7 @@ const UserInfo = () => {
   const { githubUser } = React.useContext(GithubContext);
   const { public_repos, followers, following, public_gists } = githubUser;
 
-  const
+  const items = 
   return <h2>user info component:</h2>;
 };
 

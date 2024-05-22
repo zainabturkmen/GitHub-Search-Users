@@ -38,7 +38,12 @@ const UserInfo = () => {
       color: "yellow"
     },
   ];
-  return <h2>user info component:</h2>;
+
+  return (
+    <section className="section">
+      <Wrapper className="section-center"></Wrapper>
+    </section>
+  )
 };
 
 const Wrapper = styled.section`

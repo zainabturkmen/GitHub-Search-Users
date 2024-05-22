@@ -9,7 +9,11 @@ const Repos = () => {
 
 
   return (
-    <section className='section'></section>
+    <section className='section'>
+      <Wrapper>
+        
+      </Wrapper>
+    </section>
   )
     <ExampleChart />
 };

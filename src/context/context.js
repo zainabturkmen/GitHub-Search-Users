@@ -12,7 +12,11 @@ const GithubContext = React.createContext();
 // Provider , Consumer 
 
 const GithubProvider = ({children}) => {
-    <GithubContext.Provider value="hello">{children}</GithubContext.Provider>
+    return (
+      <GithubContext.Provider value={"hello"}>
+        {children}
+      </GithubContext.Provider>
+    );
 }
 
 export {GithubProvider, GithubContext};

@@ -85,4 +85,4 @@ const ChartComponent = () => {
   return <ReactFC {...chartConfigs} />;
 }
 
-export default App;
+export default ChartComponent;

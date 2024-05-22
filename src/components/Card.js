@@ -14,7 +14,9 @@ const Card = () => {
     location,
     twitter_username,
   } = githubUser;
-  return <h2>card component</h2>;
+  return (
+    <Wrapper className=""></Wrapper>
+  )
 };
 const Wrapper = styled.article`
   background: var(--clr-white);

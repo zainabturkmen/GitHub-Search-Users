@@ -18,8 +18,8 @@ const UserInfo = () => {
     },
     {
       id: 2,
-      icon: <GoRepo className="icon" />,
-      label: "repos",
+      icon: <FiUsers className="icon" />,
+      label: "followers",
       value: public_repos,
       color: "pink"
     },

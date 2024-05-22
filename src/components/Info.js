@@ -14,53 +14,53 @@ const UserInfo = () => {
       icon: <GoRepo className="icon" />,
       label: "repos",
       value: public_repos,
-      color: "pink"
+      color: "pink",
     },
     {
       id: 2,
       icon: <FiUsers className="icon" />,
       label: "followers",
       value: followers,
-      color: "green"
+      color: "green",
     },
     {
       id: 3,
       icon: <FiUserPlus className="icon" />,
       label: "following",
       value: following,
-      color: "purple"
+      color: "purple",
     },
     {
       id: 4,
       icon: <GoRepo className="icon" />,
       label: "gists",
       value: public_gists,
-      color: "yellow"
+      color: "yellow",
     },
   ];
 
   return (
     <section className="section">
       <Wrapper className="section-center">
-        {items.map((item)=> {
-          return <Item />
+        {items.map((item) => {
+          return <Item />;
         })}
       </Wrapper>
     </section>
-  )
+  );
 };
 
-const Item = ({icon, label, value, color}) => {
+const Item = ({ icon, label, value, color }) => {
   return (
-      <article className="item">
-        <span className={color}>{icon}</span>
-        <div>
-          <h3>{value}</h3>
-          <p>{label}</p>
-        </div>
-      </article>
-  )
-}
+    <article className="item">
+      <span className={color}>{icon}</span>
+      <div>
+        <h3>{value}</h3>
+        <p>{label}</p>
+      </div>
+    </article>
+  );
+};
 
 const Wrapper = styled.section`
   display: grid;

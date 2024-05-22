@@ -20,7 +20,7 @@ const UserInfo = () => {
       id: 2,
       icon: <FiUsers className="icon" />,
       label: "followers",
-      value: public_repos,
+      value: followers,
       color: "pink"
     },
     {

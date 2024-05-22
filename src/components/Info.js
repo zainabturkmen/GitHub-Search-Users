@@ -14,6 +14,28 @@ const UserInfo = () => {
       icon: <GoRepo className="icon" />,
       label: "repos",
       value: public_repos,
+      color: "pink"
+    },
+    {
+      id: 2,
+      icon: <GoRepo className="icon" />,
+      label: "repos",
+      value: public_repos,
+      color: "pink"
+    },
+    {
+      id: 1,
+      icon: <GoRepo className="icon" />,
+      label: "repos",
+      value: public_repos,
+      color: "pink"
+    },
+    {
+      id: 1,
+      icon: <GoRepo className="icon" />,
+      label: "repos",
+      value: public_repos,
+      color: "pink"
     },
   ];
   return <h2>user info component:</h2>;

@@ -39,16 +39,19 @@ const Repos = () => {
     })
     .slice(0, 5);
 
-// stars forks
+  // stars forks
 
-let {stars, forks} = repos.reduce((total, item)=> {
-  const {stargazers_count, name, forks, } = item
-  return total;
-}, {
-  stars:{}, forks:{}
-})
-
-
+  let { stars, forks } = repos.reduce(
+    (total, item) => {
+      const { stargazers_count, name, forks } = item;
+      total.stars[]
+      return total;
+    },
+    {
+      stars: {},
+      forks: {},
+    }
+  );
 
   const chartData = [
     {

@@ -8,6 +8,7 @@ const Repos = () => {
   console.log(repos);
   let languages = repos.reduce((total, item) => {
     console.log(item);
+    return total
   }, {})
 
   const chartData = [

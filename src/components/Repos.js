@@ -25,7 +25,7 @@ const Repos = () => {
     .sort((a, b) => {
       return b.value - a.value;
     })
-    .slice();
+    .slice(0, 5);
   console.log(languages);
 
   const chartData = [

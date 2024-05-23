@@ -3,23 +3,22 @@ import styled from "styled-components";
 import { GithubContext } from "../context/context";
 import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 
-
 const Repos = () => {
   const { repos } = React.useContext(GithubContext);
-
 
   let languages = repos.reduce((total, item) => {
     const { language } = item;
     if (!language) return total;
-    if(!total[language]){
-      total[language] = 1
-    }else{
+    if (!total[language]) {
+      total[language] = 1;
+    } else {
       
     }
+
     total[language] = 30;
     return total;
   }, {});
- 
+
   console.log(languages);
 
   const chartData = [

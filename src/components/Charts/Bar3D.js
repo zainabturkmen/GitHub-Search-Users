@@ -28,7 +28,7 @@ const ChartComponent = ({ data }) => {
       // Chart Configuration
       chart: {
         caption: "Most Forked",
-        yAxisName: "Stars",
+        yAxisName: "Forks",
         xAxisName: "Repos",
         xAxisNameFontSize: "16px",
         yAxisNameFontSize: "16px",

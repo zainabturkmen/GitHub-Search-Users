@@ -12,7 +12,7 @@ const Repos = () => {
     total[language] = 30;
     return total;
   }, {});
-
+ 
   console.log(languages);
 
   const chartData = [

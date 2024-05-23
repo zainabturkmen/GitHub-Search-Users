@@ -16,41 +16,21 @@ import chart from "fusioncharts/fusioncharts.charts";
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
 // Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+ReactFC.fcRoot(FusionCharts, chart, FusionTheme);
 
 // STEP 2 - Chart Data
 const chartData = [
   {
-    label: "Venezuela",
-    value: "290",
+    label: "HTML",
+    value: "13",
   },
   {
-    label: "Saudi",
-    value: "260",
+    label: "CSS",
+    value: "23",
   },
   {
-    label: "Canada",
-    value: "180",
-  },
-  {
-    label: "Iran",
-    value: "140",
-  },
-  {
-    label: "Russia",
-    value: "115",
-  },
-  {
-    label: "UAE",
-    value: "100",
-  },
-  {
-    label: "US",
-    value: "30",
-  },
-  {
-    label: "China",
-    value: "30",
+    label: "JavaScript",
+    value: "80",
   },
 ];
 
@@ -80,9 +60,8 @@ const chartConfigs = {
   },
 };
 
-
 const ChartComponent = () => {
   return <ReactFC {...chartConfigs} />;
-}
+};
 
 export default ChartComponent;

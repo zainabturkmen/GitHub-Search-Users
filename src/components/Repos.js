@@ -44,7 +44,7 @@ const Repos = () => {
   let { stars, forks } = repos.reduce(
     (total, item) => {
       const { stargazers_count, name, forks } = item;
-      total.stars[]
+      total.stars[stargazers_count] = { label: name, value: stargazers_count };
       return total;
     },
     {
@@ -53,6 +53,9 @@ const Repos = () => {
     }
   );
 
+  stars = 
+
+  console.log(stars);
   const chartData = [
     {
       label: "HTML",

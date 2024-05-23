@@ -7,7 +7,7 @@ const Repos = () => {
   // const {} = repos;
   console.log(repos);
   let languages = repos.reduce((total, item) => {
-    console.log(item);
+    const 
     return total
   }, {})
 

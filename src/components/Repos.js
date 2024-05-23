@@ -12,7 +12,10 @@ const Repos = () => {
     if (!total[language]) {
       total[language] = { label: language, value: 1 };
     } else {
-      total[language] = { ...total[language], value: total[language] };
+      total[language] = {
+        ...total[language],
+        value: total[language].value + 1,
+      };
     }
 
     return total;

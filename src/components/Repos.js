@@ -10,7 +10,7 @@ const Repos = () => {
     const { language, stargazers_count } = item;
     if (!language) return total;
     if (!total[language]) {
-      total[language] = { label: language, value: 1 };
+      total[language] = { label: language, value: 1, stars: stargazers_count };
     } else {
       total[language] = {
         ...total[language],

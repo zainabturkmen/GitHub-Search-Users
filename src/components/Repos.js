@@ -33,7 +33,7 @@ const Repos = () => {
   const mostPopular = Object.values(languages).sort((a, b) => {
     return b.stars - a.stars;
   }).map((item) => {
-    return {...item, value:item.star}
+    return {...item, value:item.stars}
   })
   console.log(mostPopular);
 

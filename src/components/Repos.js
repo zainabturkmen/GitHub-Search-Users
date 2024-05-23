@@ -45,6 +45,7 @@ const Repos = () => {
     (total, item) => {
       const { stargazers_count, name, forks } = item;
       total.stars[stargazers_count] = { label: name, value: stargazers_count };
+      total.forks[forks] = { label: name, value: forks };
       return total;
     },
     {
@@ -53,7 +54,8 @@ const Repos = () => {
     }
   );
 
-  stars = Object.values(stars).slice(-5).reverse()
+  stars = Object.values(stars).slice(-5).reverse();
+  forks = Object.values(forks).slice(-5).reverse();
 
   console.log(stars);
   const chartData = [
@@ -77,7 +79,7 @@ const Repos = () => {
         <Pie3D data={mostUsed} />
         <Column3D data={stars} />
         <Doughnut2D data={mostPopular} />
-        <Bar3D data={chartData} />
+        <Bar3D data={forks} />
         {/* <ExampleChart data={chartData}/> */}
       </Wrapper>
     </section>

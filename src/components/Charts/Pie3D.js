@@ -30,7 +30,8 @@ const ChartComponent = ({ data }) => {
         caption: "Languages",
         theme: "fusion",
         decimals:0,
-        pieRadius: "45%"
+        pieRadius: "45%",
+        paletteColors: "#f0db4f"
       },
     
       // Chart Data

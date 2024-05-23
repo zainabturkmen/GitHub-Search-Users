@@ -41,7 +41,9 @@ const Repos = () => {
 
 // stars forks
 
-let {stars, forks} = repos.reduce(()=> {}, {})
+let {stars, forks} = repos.reduce(()=> {}, {
+  stars:{}, forks:{}
+})
 
 
 

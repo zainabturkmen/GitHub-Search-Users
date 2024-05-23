@@ -12,7 +12,9 @@ const Repos = () => {
     const { language } = item;
     if (!language) return total;
     if(!total[language]){
-      total[language]
+      total[language] = 1
+    }else{
+      
     }
     total[language] = 30;
     return total;

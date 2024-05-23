@@ -7,13 +7,12 @@ const Repos = () => {
   // const {} = repos;
   console.log(repos);
   let languages = repos.reduce((total, item) => {
-    const {language} = item
-    if (!language) {
-      
-    }
+    const { language } = item;
+    if (!language) return total;
     console.log(language);
-    return total
-  }, {})
+    total["random"] = 30;
+    return total;
+  }, {});
 
   const chartData = [
     {

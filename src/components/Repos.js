@@ -15,6 +15,7 @@ const Repos = () => {
       total[language] = {
         ...total[language],
         value: total[language].value + 1,
+        stars: stargazers_count
       };
     }
 

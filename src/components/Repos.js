@@ -12,7 +12,7 @@ const Repos = () => {
     },
     {
       label: "CSS",
-      value: "23",
+      value: "100",
     },
     {
       label: "JavaScript",
@@ -23,7 +23,7 @@ const Repos = () => {
   return (
     <section className="section">
       <Wrapper className="section-center">
-        <ExampleChart data={chartData}/>
+        {/* <ExampleChart data={chartData}/> */}
       </Wrapper>
     </section>
   );

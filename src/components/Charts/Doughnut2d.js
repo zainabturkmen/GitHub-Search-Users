@@ -30,7 +30,8 @@ const ChartComponent = ({ data }) => {
         caption: "Stars per Language",
         decimals: 0,
         doughnutRadius: "45%",
-        paletteColors: "#bcbcd",
+        showPercentValues: 0,
+        theme
       },
 
       // Chart Data

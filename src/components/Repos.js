@@ -53,7 +53,7 @@ const Repos = () => {
     }
   );
 
-  stars = Object.values(stars).slice(-5).
+  stars = Object.values(stars).slice(-5).reverse()
 
   console.log(stars);
   const chartData = [
@@ -75,7 +75,7 @@ const Repos = () => {
     <section className="section">
       <Wrapper className="section-center">
         <Pie3D data={mostUsed} />
-        <Column3D data={chartData} />
+        <Column3D data={stars} />
         <Doughnut2D data={mostPopular} />
         <Bar3D data={chartData} />
         {/* <ExampleChart data={chartData}/> */}

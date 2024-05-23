@@ -53,7 +53,7 @@ const Repos = () => {
     }
   );
 
-  stars = 
+  stars = Object.values(stars).slice()
 
   console.log(stars);
   const chartData = [

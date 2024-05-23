@@ -29,7 +29,8 @@ const ChartComponent = ({ data }) => {
       chart: {
         caption: "Most Popular",
         yAxisName: "Stars",
-        xAxisName: "Repos"
+        xAxisName: "Repos",
+        xAxisNameFontSize: "Repos",
       },
 
       // Chart Data

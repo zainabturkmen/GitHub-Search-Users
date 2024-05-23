@@ -28,10 +28,7 @@ const ChartComponent = ({ data }) => {
       // Chart Configuration
       chart: {
         caption: "Most Popular",
-        theme: "fusion",
-        decimals: 0,
-        pieRadius: "45%",
-        paletteColors: "#bcbcd",
+        
       },
 
       // Chart Data

@@ -32,7 +32,9 @@ const Repos = () => {
 
   const mostPopular = Object.values(languages).sort((a, b) => {
     return b.stars - a.stars;
-  }).map()
+  }).map((item) => {
+    
+  })
   console.log(mostPopular);
 
   const chartData = [

@@ -6,7 +6,9 @@ const Repos = () => {
   const { repos } = React.useContext(GithubContext);
   // const {} = repos;
   console.log(repos);
-  let languages = repos.reduce((total, item) => {}, [])
+  let languages = repos.reduce((total, item) => {
+    console.log(item);
+  }, {})
 
   const chartData = [
     {

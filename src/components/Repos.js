@@ -10,7 +10,7 @@ const Repos = () => {
     const { language } = item;
     if (!language) return total;
     console.log(language);
-    total["random"] = 30;
+    total[language] = 30;
     return total;
   }, {});
 

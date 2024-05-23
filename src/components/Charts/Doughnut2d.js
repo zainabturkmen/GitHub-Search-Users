@@ -31,7 +31,7 @@ const ChartComponent = ({ data }) => {
         decimals: 0,
         doughnutRadius: "45%",
         showPercentValues: 0,
-        theme
+        theme: "candy"
       },
 
       // Chart Data

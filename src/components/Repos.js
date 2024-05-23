@@ -35,7 +35,6 @@ const Repos = () => {
   }).map((item) => {
     return {...item, value:item.stars}
   }).slice(0, 5)
-  console.log(mostPopular);
 
   const chartData = [
     {

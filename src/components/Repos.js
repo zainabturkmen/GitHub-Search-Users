@@ -21,8 +21,8 @@ const Repos = () => {
     return total;
   }, {});
 
-  // console.log(languages);
-  languages = Object.values()
+  languages = Object.values(languages);
+  console.log(languages);
 
   const chartData = [
     {

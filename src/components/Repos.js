@@ -9,10 +9,11 @@ const Repos = () => {
   let languages = repos.reduce((total, item) => {
     const { language } = item;
     if (!language) return total;
-    console.log(language);
     total[language] = 30;
     return total;
   }, {});
+
+  console.log(languages);
 
   const chartData = [
     {

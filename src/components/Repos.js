@@ -6,7 +6,7 @@ import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 const Repos = () => {
   const { repos } = React.useContext(GithubContext);
 
-  let languages = repos.reduce((total, item) => {
+  const languages = repos.reduce((total, item) => {
     const { language, stargazers_count } = item;
     if (!language) return total;
     if (!total[language]) {
@@ -15,14 +15,14 @@ const Repos = () => {
       total[language] = {
         ...total[language],
         value: total[language].value + 1,
-        stars: stargazers_count
+        stars: total[language].stars + stargazers_count,
       };
     }
 
     return total;
   }, {});
 
-  languages = Object.values(languages)
+  const mostUsed = Object.values(languages)
     .sort((a, b) => {
       return b.value - a.value;
     })

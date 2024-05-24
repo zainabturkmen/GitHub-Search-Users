@@ -15,7 +15,7 @@ const Card = () => {
     twitter_username,
   } = githubUser;
   return (
-    <Wrapper className="">
+    <Wrapper>
       <header>
         <img src={avatar_url} alt={name} />
         <div>
@@ -26,9 +26,16 @@ const Card = () => {
       </header>
       <p className="bio">{bio}</p>
       <div className="links">
-        <p><MdBusiness></MdBusiness> {company}</p>
-        <p><MdLocationOn></MdLocationOn> {location}</p>
-        <a href={"https://${blog}"}><MdLink></MdLink>{blog}</a>
+        <p>
+          <MdBusiness></MdBusiness> {company}
+        </p>
+        <p>
+          <MdLocationOn></MdLocationOn> {location}
+        </p>
+        <a href={"https://${blog}"}>
+          <MdLink></MdLink>
+          {blog}
+        </a>
       </div>
     </Wrapper>
   );

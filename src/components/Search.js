@@ -7,9 +7,11 @@ const Search = () => {
   // get things from global context
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(user);
-    // more logic comign up soon
+    e.preventDefault();
+    if(user){
+      // more logic comign up soon
+
+    }
   };
   return (
     <section className="section">

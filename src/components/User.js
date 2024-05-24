@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import Card from './Card';
-import Followers from './Followers';
+import React from "react";
+import styled from "styled-components";
+import Card from "./Card";
+import Followers from "./Followers";
 const User = () => {
-  return(
-    <section className='section'>
+  return (
+    <section className="section">
       <Wrapper classNamw="section-center">
-        <Card />
-        <Followers />
+        <Card></Card>
+        <Followers></Followers>
       </Wrapper>
     </section>
-  )
+  );
 };
 
 const Wrapper = styled.div`

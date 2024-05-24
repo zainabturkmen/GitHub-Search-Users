@@ -19,7 +19,7 @@ const Search = () => {
               type="text"
               placeholder="enter github user"
               value={user}
-              onChange={handleSubmit}
+              onChange={() => handleSubmit}
             />
             <button type="submit">Search</button>
           </div>

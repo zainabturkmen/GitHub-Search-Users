@@ -9,7 +9,7 @@ const Search = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(user);
-    // more logic comign up
+    // more logic comign up soon
   };
   return (
     <section className="section">

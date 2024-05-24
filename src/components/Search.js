@@ -9,7 +9,16 @@ const Search = () => {
   const handleSubmit = (e) => {
     console.log(user);
   }
-  return <section className='section'></section>
+  return <section className='section'>
+    <Wrapper className="section-center">
+      <form onSubmit={handleSubmit}>
+        <div className='form-control'>
+          <MdSearch/>
+          <input type='text' />
+        </div>
+      </form>
+    </Wrapper>
+  </section>
 };
 
 const Wrapper = styled.div`

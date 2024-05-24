@@ -21,13 +21,16 @@ const GithubProvider = ({ children }) => {
   // check rate
   const checkRequest = () => {
     axios(`${rootUrl}/rate_limit`)
-      .then(({data}) => {
-        console.log(data);
+      .then(({ data }) => {
+        let {
+          rate: { remaining },
+        } = data;
       })
       .catch((error) => console.log(error));
   };
   // error
-  useEffect( checkRequest(), []);
+  useEffect(checkRequest(), []);
+
   return (
     <GithubContext.Provider
       value={{

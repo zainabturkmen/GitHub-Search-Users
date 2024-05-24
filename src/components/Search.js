@@ -5,6 +5,7 @@ import { GithubContext } from "../context/context";
 const Search = () => {
   const [user, setUser] = React.useState("");
   const { request } = React.useContext(GithubContext);
+  console.log(request);
   // get things from global context
 
   const handleSubmit = (e) => {
@@ -27,10 +28,10 @@ const Search = () => {
               value={user}
               onChange={(e) => setUser(e.target.value)}
             />
-            <button type="submit">Search</button>
+            {request > 0 && <button type="submit">Search</button>}
           </div>
         </form>
-        <h3>requests: 60/60</h3>
+        <h3>requests: {request}/60</h3>
       </Wrapper>
     </section>
   );

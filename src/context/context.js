@@ -38,7 +38,7 @@ const GithubProvider = ({ children }) => {
   };
 
   function toggleError(show, msg) {
-    setError({ show, msg });
+    setError({ show =false, msg = "" });
   }
   // error
   useEffect(checkRequest, []);

@@ -34,6 +34,10 @@ const GithubProvider = ({ children }) => {
       })
       .catch((error) => console.log(error));
   };
+
+  function toggleError(show, msg) {
+    setError({show, msg})
+  }
   // error
   useEffect(checkRequest, []);
 

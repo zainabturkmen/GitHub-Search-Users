@@ -30,7 +30,7 @@ const GithubProvider = ({ children }) => {
         setRequest(remaining);
         if (remaining === 0) {
           // throw an error
-          toggleError
+          toggleError(true)
         }
       })
       .catch((error) => console.log(error));

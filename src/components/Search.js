@@ -7,9 +7,9 @@ const Search = () => {
   // get things from global context
 
   const handleSubmit = (e) => {
-    
+    console.log(user);
   }
-  return <h2>search component</h2>;
+  return <section className='section'></section>
 };
 
 const Wrapper = styled.div`

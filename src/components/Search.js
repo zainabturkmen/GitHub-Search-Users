@@ -9,6 +9,7 @@ const Search = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(user);
+    // more logic comign up
   };
   return (
     <section className="section">

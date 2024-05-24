@@ -27,7 +27,6 @@ const GithubProvider = ({ children }) => {
         let {
           rate: { remaining },
         } = data;
-        remaining = 0;
         setRequest(remaining);
         if (remaining === 0) {
           // throw an error
@@ -38,7 +37,7 @@ const GithubProvider = ({ children }) => {
   };
 
   function toggleError(show, msg) {
-    setError({ show =false, msg = "" });
+    setError({ show: false, msg :'' });
   }
   // error
   useEffect(checkRequest, []);

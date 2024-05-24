@@ -18,9 +18,13 @@ const GithubProvider = ({ children }) => {
   // requst loading
   const [request, setRequest] = useState(0)
   const [loading, setLoading] = useState(false);
+  // check rate
+  const checkRequest = () => {
+    
+  }
   // error
   useEffect(() => {
-    
+
   },[])
   return (
     <GithubContext.Provider value={{

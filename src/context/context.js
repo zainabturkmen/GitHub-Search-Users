@@ -49,6 +49,7 @@ const GithubProvider = ({ children }) => {
         repos,
         followers,
         request,
+        error,
       }}
     >
       {children}

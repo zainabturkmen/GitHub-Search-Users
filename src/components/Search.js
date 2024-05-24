@@ -19,7 +19,7 @@ const Search = () => {
   return (
     <section className="section">
       <Wrapper className="section-center">
-        {}
+        {error.show}
         <form onSubmit={handleSubmit}>
           <div className="form-control">
             <MdSearch />

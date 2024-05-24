@@ -13,25 +13,29 @@ const GithubContext = React.createContext();
 const GithubProvider = ({ children }) => {
   const [githubUser, setGithubUser] = useState(mockUser);
   const [repos, setRepos] = useState(mockRepos);
-  const [followers, setFollowers] = useState(mockFollowers)
+  const [followers, setFollowers] = useState(mockFollowers);
 
   // requst loading
-  const [request, setRequest] = useState(0)
+  const [request, setRequest] = useState(0);
   const [loading, setLoading] = useState(false);
   // check rate
   const checkRequest = () => {
-    axios(`${rootUrl}/rate_limit`).then(() => {
-
-    }).catch((error) => console.log(error))
-  }
+    axios(`${rootUrl}/rate_limit`)
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
   // error
-  useEffect(() => {
-    checkRequest()
-  },[])
+  useEffect( checkRequest(), []);
   return (
-    <GithubContext.Provider value={{
-        githubUser, repos, followers
-    }}>{children}</GithubContext.Provider>
+    <GithubContext.Provider
+      value={{
+        githubUser,
+        repos,
+        followers,
+      }}
+    >
+      {children}
+    </GithubContext.Provider>
   );
 };
 

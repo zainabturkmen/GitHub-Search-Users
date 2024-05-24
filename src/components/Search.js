@@ -8,9 +8,9 @@ const Search = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(user){
+    if (user) {
       // more logic comign up soon
-
+      setUser("");
     }
   };
   return (

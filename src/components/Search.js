@@ -4,6 +4,7 @@ import { MdSearch } from "react-icons/md";
 import { GithubContext } from "../context/context";
 const Search = () => {
   const [user, setUser] = React.useState("");
+  const { request } = React.useContext(GithubContext);
   // get things from global context
 
   const handleSubmit = (e) => {

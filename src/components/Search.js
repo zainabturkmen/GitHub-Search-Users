@@ -5,6 +5,10 @@ import { GithubContext } from '../context/context';
 const Search = () => {
   const [user, setUser] = React.useState("")
   // get things from global context
+
+  const handleSubmit = (e) => {
+    
+  }
   return <h2>search component</h2>;
 };
 

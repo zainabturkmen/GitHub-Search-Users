@@ -33,7 +33,7 @@ const GithubProvider = ({ children }) => {
       .catch((error) => console.log(error));
   };
   // error
-  useEffect(checkRequest(), []);
+  useEffect(checkRequest, []);
 
   return (
     <GithubContext.Provider
@@ -41,6 +41,7 @@ const GithubProvider = ({ children }) => {
         githubUser,
         repos,
         followers,
+        request
       }}
     >
       {children}

@@ -10,6 +10,7 @@ const Search = () => {
     e.preventDefault();
     if (user) {
       // more logic comign up soon
+      // optional
       setUser("");
     }
   };

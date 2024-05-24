@@ -20,7 +20,7 @@ const GithubProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   // error
   useEffect(() => {
-    console.log("hey the app is loading");
+    
   },[])
   return (
     <GithubContext.Provider value={{

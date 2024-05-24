@@ -18,6 +18,7 @@ const Search = () => {
           <button type='submit'>Search</button>
         </div>
       </form>
+      <h3>reque</h3>
     </Wrapper>
   </section>
 };

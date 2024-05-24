@@ -19,6 +19,9 @@ const GithubProvider = ({ children }) => {
   const [request, setRequest] = useState(0)
   const [loading, setLoading] = useState(false);
   // error
+  useEffect(() => {
+    console.log("hey the app is loading");
+  },[])
   return (
     <GithubContext.Provider value={{
         githubUser, repos, followers

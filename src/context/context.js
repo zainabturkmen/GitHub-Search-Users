@@ -25,6 +25,7 @@ const GithubProvider = ({ children }) => {
         let {
           rate: { remaining },
         } = data;
+        setRequest(remaining)
       })
       .catch((error) => console.log(error));
   };

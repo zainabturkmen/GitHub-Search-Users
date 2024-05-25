@@ -22,12 +22,13 @@ const GithubProvider = ({ children }) => {
   // error
   const [error, setError] = useState({ show: false, msg: "" });
 
-
   const searchGithubUser = async (user) => {
     // toggleError
     // setLoading(true)
-    const response = await axios(`${rootUrl}/users/${user}`).catch(error => console.log(error))
-  }
+    const response = await axios(`${rootUrl}/users/${user}`).catch((error) =>
+      console.log(error)
+    );
+  };
   // check rate
   const checkRequest = () => {
     axios(`${rootUrl}/rate_limit`)
@@ -45,7 +46,7 @@ const GithubProvider = ({ children }) => {
   };
 
   function toggleError(show, msg) {
-    setError({ show: false, msg :'' });
+    setError({ show: false, msg: "" });
   }
   // error
   useEffect(checkRequest, []);
@@ -58,7 +59,7 @@ const GithubProvider = ({ children }) => {
         followers,
         request,
         error,
-        searchGithubUser
+        searchGithubUser,
       }}
     >
       {children}

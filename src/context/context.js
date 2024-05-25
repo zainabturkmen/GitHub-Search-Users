@@ -67,6 +67,7 @@ const GithubProvider = ({ children }) => {
         request,
         error,
         searchGithubUser,
+        isloading
       }}
     >
       {children}

@@ -5,7 +5,10 @@ import { GithubContext } from "../context/context";
 const Dashboard = () => {
   const { isloading } = React.useContext(GithubContext);
   if(isloading){
-    
+    return <main>
+      <Navbar />
+      <Search />
+    </main>
   }
   return (
     <main>

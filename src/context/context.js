@@ -32,7 +32,7 @@ const GithubProvider = ({ children }) => {
     if (response) {
       setGithubUser(response.data);
     } else {
-      toggleError()
+      toggleError(true)
     }
   };
   // check rate

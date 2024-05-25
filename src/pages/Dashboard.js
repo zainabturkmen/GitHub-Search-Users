@@ -4,6 +4,9 @@ import loadingImage from "../images/preloader.gif";
 import { GithubContext } from "../context/context";
 const Dashboard = () => {
   const { isloading } = React.useContext(GithubContext);
+  if(isloading){
+    
+  }
   return (
     <main>
       <Navbar></Navbar>

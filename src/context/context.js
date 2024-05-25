@@ -31,8 +31,10 @@ const GithubProvider = ({ children }) => {
     console.log(response);
     if (response) {
       setGithubUser(response.data);
-      const {login, followers_url} = response.data
-      
+      const { login, followers_url } = response.data;
+      axios(`${rootUrl}/users/${login}/repos?per_page=100}`)
+        .then((response) => console.log(response))
+        .catch((err) => console.log(err));
       // more logic here
       // repos
       // https://api.github.com/users/john-smilga/repos?per_page=100
@@ -43,7 +45,7 @@ const GithubProvider = ({ children }) => {
     }
 
     checkRequest();
-    setIsLoading(false)
+    setIsLoading(false);
   };
   // check rate
   const checkRequest = () => {
@@ -76,7 +78,7 @@ const GithubProvider = ({ children }) => {
         request,
         error,
         searchGithubUser,
-        isloading
+        isloading,
       }}
     >
       {children}

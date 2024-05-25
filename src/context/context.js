@@ -18,7 +18,7 @@ const GithubProvider = ({ children }) => {
 
   // requst loading
   const [request, setRequest] = useState(0);
-  const [isloading, setIsLoading] = useState(true);
+  const [isloading, setIsLoading] = useState(false);
   // error
   const [error, setError] = useState({ show: false, msg: "" });
 

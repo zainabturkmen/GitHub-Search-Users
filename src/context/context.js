@@ -32,7 +32,7 @@ const GithubProvider = ({ children }) => {
     if (response) {
       setGithubUser(response.data);
     } else {
-      toggleError(true, "there is no user with that username")
+      toggleError(true, "there is no user with that username");
     }
   };
   // check rate

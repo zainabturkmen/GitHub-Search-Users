@@ -22,8 +22,9 @@ const GithubProvider = ({ children }) => {
   const [error, setError] = useState({ show: false, msg: "" });
 
 
-  const 
-
+  const searchGithubUser = async () => {
+    
+  }
   // check rate
   const checkRequest = () => {
     axios(`${rootUrl}/rate_limit`)

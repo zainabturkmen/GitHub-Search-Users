@@ -31,6 +31,7 @@ const GithubProvider = ({ children }) => {
     console.log(response);
     if (response) {
       setGithubUser(response.data);
+      // more logic here
     } else {
       toggleError(true, "there is no user with that username");
     }

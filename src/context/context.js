@@ -56,6 +56,7 @@ const GithubProvider = ({ children }) => {
         followers,
         request,
         error,
+        searchGithubUser
       }}
     >
       {children}

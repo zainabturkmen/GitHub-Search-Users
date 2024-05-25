@@ -3,6 +3,7 @@ import mockUser from "./mockData.js/mockUser";
 import mockRepos from "./mockData.js/mockRepos";
 import mockFollowers from "./mockData.js/mockFollowers";
 import axios from "axios";
+import { User } from "../components";
 
 const rootUrl = "https://api.github.com";
 
@@ -22,8 +23,8 @@ const GithubProvider = ({ children }) => {
   const [error, setError] = useState({ show: false, msg: "" });
 
 
-  const searchGithubUser = async () => {
-    
+  const searchGithubUser = async (user) => {
+    console.log(User);
   }
   // check rate
   const checkRequest = () => {

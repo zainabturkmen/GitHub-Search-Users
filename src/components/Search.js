@@ -12,16 +12,18 @@ const Search = () => {
     e.preventDefault();
     if (user) {
       // more logic comign up soon
-      searchGithubUser()
+      searchGithubUser(user);
       // optional
     }
   };
   return (
     <section className="section">
       <Wrapper className="section-center">
-        {error.show && <ErrorWrapper>
-          <p>{error.msg}</p>
-          </ErrorWrapper>}
+        {error.show && (
+          <ErrorWrapper>
+            <p>{error.msg}</p>
+          </ErrorWrapper>
+        )}
         <form onSubmit={handleSubmit}>
           <div className="form-control">
             <MdSearch />

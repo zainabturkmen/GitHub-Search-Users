@@ -14,7 +14,6 @@ const Search = () => {
       // more logic comign up soon
       searchGithubUser()
       // optional
-      setUser("");
     }
   };
   return (

@@ -4,7 +4,8 @@ import { MdSearch } from "react-icons/md";
 import { GithubContext } from "../context/context";
 const Search = () => {
   const [user, setUser] = React.useState("");
-  const { request, error, searchGithubUser } = React.useContext(GithubContext);
+  const { request, error, searchGithubUser, isloading } =
+    React.useContext(GithubContext);
   console.log(request);
   // get things from global context
 

@@ -26,7 +26,7 @@ const GithubProvider = ({ children }) => {
   const searchGithubUser = async (user) => {
     // toggleError
     // setLoading(true)
-    const response = await axios(`${rootUrl}/users/${}`)
+    const response = await axios(`${rootUrl}/users/${user}`).catch(error => console.log(error))
   }
   // check rate
   const checkRequest = () => {

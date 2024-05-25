@@ -25,7 +25,7 @@ const GithubProvider = ({ children }) => {
 
   const searchGithubUser = async (user) => {
     // toggleError
-    // 
+    // setLoading(true)
   }
   // check rate
   const checkRequest = () => {

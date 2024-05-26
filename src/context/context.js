@@ -40,6 +40,8 @@ const GithubProvider = ({ children }) => {
       await axios(`${followers_url}?per_page=100}`).then((response) =>
         setFollowers(response.data)
       );
+
+      await Promise
       
     } else {
       toggleError(true, "there is no user with that username");

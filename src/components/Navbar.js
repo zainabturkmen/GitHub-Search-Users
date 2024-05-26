@@ -5,7 +5,11 @@ import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = () => {
   const { isAuthenticated, loginWithRedirect, logout, user, isLoading } =
     useAuth0();
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+      <button onClick={}></button>
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.nav`

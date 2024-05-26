@@ -37,7 +37,7 @@ const GithubProvider = ({ children }) => {
         axios(`${rootUrl}/users/${login}/repos?per_page=100}`),
         axios(`${followers_url}?per_page=100}`).then((results) => {
           const [repos, followers] = results;
-          const 
+          const status = "fulfilled"
         }),
       ]);
     } else {

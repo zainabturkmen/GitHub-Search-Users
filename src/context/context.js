@@ -39,6 +39,12 @@ const GithubProvider = ({ children }) => {
       ]).then((results) => {
         const [repos, followers] = results;
         const status = "fulfilled";
+        if (repos.status === status) {
+          setRepos(repos.value.data)
+        }
+        if (followers.status === status) {
+          setRepos(followers.value.data)
+        }
       });
     } else {
       toggleError(true, "there is no user with that username");

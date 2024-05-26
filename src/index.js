@@ -5,6 +5,12 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { GithubProvider } from "./context/context";
 import { Auth0Provider } from "@auth0/auth0-react";
+
+// Domain
+// dev-52zlsq8kagmrbkzs.us.auth0.com
+// Client ID
+// acwlkctTVlR0geQXv2bHXNJRAMWuBQ9H
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

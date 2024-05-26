@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useAuth0 } from '@auth0/auth0-react';
+import React from "react";
+import styled from "styled-components";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
-  return <Wrapper>
-    Navbar
-  </Wrapper>
+  const { isAuthenticated, loginWithRedirect, logout, user, isLoading } =
+    useAuth0();
+  return <Wrapper></Wrapper>;
 };
 
 const Wrapper = styled.nav`

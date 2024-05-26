@@ -41,7 +41,7 @@ const GithubProvider = ({ children }) => {
         setFollowers(response.data)
       );
 
-      await Promise
+      await Promise.allSettled([])
       
     } else {
       toggleError(true, "there is no user with that username");

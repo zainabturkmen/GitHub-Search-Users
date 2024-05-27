@@ -7,6 +7,7 @@ import styled from 'styled-components';
 function AuthWrapper({children}) {
   const {isLoading, error, } = useAuth0();
   if (isLoading) {
+    return <Wrapper></Wrapper>
     
   }if(error){
     return <Wrapper><h1>{error.message}</h1></Wrapper>

@@ -7,7 +7,7 @@ const Navbar = () => {
     useAuth0();
   return (
     <Wrapper>
-      <button onClick={loginWithRedirect}></button>
+      <button onClick={loginWithRedirect}>login</button>
     </Wrapper>
   );
 };

@@ -7,9 +7,9 @@ import { GithubProvider } from "./context/context";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 // Domain
-// dev-nu7dw41b206jfhjn.us.auth0.com
+// dev-vcvthrxqytyqubqb.us.auth0.com
 // Client ID
-// 1XcfuSknseytTcjhQ3G1bS6dteywZSu0
+// ae5FnVXdajsp94Renhw5zWP2F8M1gUMr
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

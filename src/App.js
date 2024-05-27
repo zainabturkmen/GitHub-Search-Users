@@ -5,12 +5,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <AuthWrapper>
-
-    <Router>
-      <Routes>
-        
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="login" element={<Login />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </Router>
     </AuthWrapper>
   );
 }

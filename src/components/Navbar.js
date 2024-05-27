@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <Wrapper>
-      {isUser && user.picture && <img src=""/>}
+      {isUser && user.picture && <img src={user.picture}/>}
       <button onClick={loginWithRedirect}>login</button>
       <button
         onClick={() => {

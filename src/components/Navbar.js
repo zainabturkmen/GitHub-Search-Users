@@ -6,13 +6,7 @@ const Navbar = () => {
   const { isAuthenticated, loginWithRedirect, logout, user, isLoading } =
     useAuth0();
   const isUser = isAuthenticated && user;
-  console.log({
-    isAuthenticated,
-    loginWithRedirect,
-    logout,
-    user,
-    isLoading,
-  });
+
   return (
     <Wrapper>
       <button onClick={loginWithRedirect}>login</button>

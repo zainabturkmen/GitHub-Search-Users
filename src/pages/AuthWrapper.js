@@ -10,7 +10,7 @@ function AuthWrapper({children}) {
     
   }if(error){
   }
-  return <h2>authwrapper component</h2>;
+  return <>{children}</>
 }
 
 const Wrapper = styled.section`

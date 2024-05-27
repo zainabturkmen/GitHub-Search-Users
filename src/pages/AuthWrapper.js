@@ -9,7 +9,7 @@ function AuthWrapper({children}) {
   if (isLoading) {
     
   }if(error){
-    return <Wrapper><h1>{error}</h1></Wrapper>
+    return <Wrapper><h1>{error.message}</h1></Wrapper>
   }
   return <>{children}</>
 }
